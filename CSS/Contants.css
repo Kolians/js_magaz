@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+}
+
+body{
+  background: url(../photo/332.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: Verdana;
+}
+nav{
+ width: 1250px;
+ background: #333;
+ height: 40px;
+ margin: -133px 0 0 315px;
+ border-radius: 20px;
+ position:absolute;
+ box-shadow: 0 22px 32px -12px rgba(0,0,0,0.5);
+}
+
+nav ul{
+	margin: 0 200px;
+    display: inline-block;
+}
+nav ul li{
+    float: left;
+	list-style: none;
+}
+
+nav ul li a{
+	margin-top: -1px ;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding:10px 55px;
+    color: white;
+    display:inline-block;
+    transition: 0.5s; 
+}
+
+nav ul li a:hover{
+    background: #6495ED;
+    transition: 0.5s; 
+}
+nav ul li a i{
+ margin-right: 10px;
+}
+
+nav ul li a:hover{
+ color: white;
+}
+
+.menu__list{ 
+position: relative; 
+} 
+
+.menu__drop li a{
+    width: 160px;
+    border-bottom:3px solid #666;
+    background: #333;
+	border-radius: 20px;
+	box-shadow: 0 22px 32px -12px rgba(0,0,0,0.5);
+}
+
+.menu__drop li a:hover{
+    margin-left:0;
+}
+.menu__drop{
+position: absolute; 
+opacity:0; 
+z-index: 2; 
+margin-top: -14px;
+top:-9999em; 
+padding-left: 0px;
+border-top: 10px solid transparent; 
+transition: 0.5s opacity; 
+} 
+.menu__list:hover .menu__drop{ 
+opacity: 1; 
+top: 49px;
+margin-left: 0px;
+} 
+/*Конец всплывающего меню*/ 
+
+/*иконки для всплывающих менюшек*/ 
+.menu__list::after{ 
+content:" "; 
+position: absolute; 
+border: 5px solid; 
+border-color: transparent transparent #6495ED transparent; 
+bottom: 14px; 
+right: 2em; 
+transition: 0.5s; 
+} 
+
+.menu__list:hover::after{ 
+transform: scaleY(-1); 
+} 
+
+section{
+     background: #fff;
+     padding-bottom:10px;
+     width: 1300px;
+     padding: 10px;
+     margin: 0 auto;
+	margin-top: 150px;
+}
+
+section h2 span{
+     font-size: 21px;
+     padding: 10px 0;
+     color: #6495ED;
+}
+
+section p a{
+     color: #6495ED;
+     text-decoration: none;
+}
+
+section p a:hover{
+    text-decoration: underline;
+}
+
+section h2{
+     font-size: 21px;
+     padding: 10px 0;
+     color: #6495ED;
+}
+
+section article #faq .faq__item{
+    background: #E2E2E2;
+    margin-top: 4px;
+    padding: 10px 15px;
+    border-left: 3px solid #6495ED;
+    cursor: pointer;
+    border-bottom: 1px solid #ACADAD;
+    border-right: 1px solid #ACADAD;
+}
+ 
+ section article  .js-faq{
+     color: black;
+     text-decoration: none;
+ }
+ 
+
+section p,section ol li{
+    line-height: 1.3em;
+    color: #333;
+    width: 930px;
+}
+
+section .FROM_RUSSIA{
+    margin-bottom: 100px;
+}
+
+section ol li{
+    margin-left: 15px;
+    list-style-type: decimal;
+}
+
+section article .drop_text{
+    display: none;
+    width: 930px;
+    color: #4E4E53;
+    padding: 5px 0;
+    line-height: 1.3em;
+    border-top:1px solid #ACADAD;
+    margin-top: 5px;
+}
+
+footer{
+    min-width: 1320px;
+    background:  #282828;
+    height: auto;
+    overflow: hidden;
+}
+
+footer .footer_content{
+    width: 1200px;
+    margin:0 auto;
+    margin-top: 18px;
+
+}
+
+footer .footer_box{
+    width: 450px;
+    float: left;
+    margin-left:-51px;
+    margin-bottom:50px;
+    color:#fff;
+}
+
+footer .footer_box h2{
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-weight:normal;
+}
+
+
+
+footer .footer_box:first-child{
+    width: 410px;
+    line-height: 1.1em;
+}
+
+

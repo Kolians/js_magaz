@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Товары для спорта</title>
+    <link href="CSS/sport_and_thdorovia.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/font-awesome.css" type="text/css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" ></script>
+	<script src="js/wicart.js"  type="text/javascript" ></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+<body>
+   <header>
+	<nav>
+		<ul>
+			<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+			<li class="menu__list"><a href="#"><i class="fa fa-server" aria-hidden="true"></i>Category</a>
+			   <ul class="menu__drop"> 
+                  <li class="pod__menu top"><a  href="tdorovia.html">Здоровья</a></li> 
+                  <li class="pod__menu"><a href="sport_tovar.html">Спорт</a></li> 
+               </ul> 
+               </li>
+			<li><a href="Contact.html"><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a></li>
+			<li><a href="#" onclick="cart.showWinow('bcontainer',1)"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Basket</a></li>
+		</ul>
+	  </nav>
+</header>
+<div id="wrapper">
+		<aside>
+			<!---Форма для магазина-------------------------------->
+	<div id="order" class="popup"> 
+		<a href="#" onclick="cart.closeWindow('order', 0)" style="float:right">[закрыть]</a> 
+		<h4>Введите ваши контактные данные</h4> 
+	<form action="sendmail.php" method="post"> 
+		<input type="text" name="fio" placeholder="Укажите ФИО" required> 
+		<input type="text" name="email" placeholder="Укажите e-mail" required> 
+		<input type="submit" value="Отправить"> 
+		</form> 
+	</div> 
+			<!----------------------------------------------------->
+		</aside>
+<section>
+	<h1><hr class="four">Товары для Здоровья<hr class="three"></h1>
+	<article>
+		<figure>
+				<ul class="products clearfix">
+				<li class="product-wrapper">
+		  			<a href="" class="product">
+		   				<div class="product-main">
+			    			<div class="product-photo">
+					 			<img src="photo/relaks.jpg" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Массажер для тела Bradex «Релакс»</h2>
+					 			<p>Cледить за фигурой и здоровьем можно и не выходя из дома! </p>
+				  			</div>
+		      			</div>
+		      			<div class="product-details-wrap">						
+							<div class="product-details">
+				   			<div class="product-availability">
+				   				<span class="icon icon-check"></span>В наличии
+				   			</div>
+				   			<span class="product-price">
+					   			<b>1 760</b>
+					   			<small>руб.</small>
+				   			</span>
+			   	   			</div>
+			   	   		<div class="product-buttons-wrap">
+				   			<div class="buttons">
+					   			<span class="button to-cart" onclick="cart.addToCart(this, '033', priceList['033'])"><span class="icon icon-cart"></span>В корзину</span>
+				   			</div>
+			   			</div>
+		   			</div>
+				   </a>
+				</li>
+			</ul>
+		</figure>
+		<figure class="left">
+			<ul class="products clearfix">
+				<li class="product-wrapper">
+					<a href="" class="product" >
+		   				<div class="product-main">
+			    			<div class="product-photo">
+					 			<img src="photo/poduchka.jpg" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Подушка Dormeo RELAX</h2>
+					    		<p>Косметический гель для спортивного массажа.</p>
+				  			</div>
+		    			</div>
+		      				<div class="product-details-wrap">						
+								<div class="product-details">
+				   					<div class="product-availability">
+				  						 <span class="icon icon-check"></span>В наличии
+				   					</div>
+				   					<span class="product-price">
+					   					<b>599</b>
+					   					<small>руб.</small>
+				   					</span>
+			     				</div>
+			     				<div class="product-buttons-wrap">
+				   					<div class="buttons">
+					   					<span class="button to-cart" onclick="cart.addToCart(this, '034', priceList['034'])"><span class="icon icon-cart"></span>В корзину</span>
+				  	   				</div>
+			   	 				</div>
+		   					</div>
+						</a>
+					</li>
+				</ul>
+		</figure>
+		<figure class="left">
+			<ul class="products clearfix">
+				<li class="product-wrapper">
+					<a href="" class="product">
+		   				<div class="product-main">
+			   				<div class="product-photo">
+					 			<img src="photo/pois.JPG" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Пояс фиксированный Miss Belt</h2>
+					   			<p>Пояс Miss Belt поможет вам без особых усилий сделать талию тоньше!</p>
+				  			</div>
+		    			</div>
+		      			<div class="product-details-wrap">						
+							<div class="product-details">
+				  				 <div class="product-availability">
+				  					 <span class="icon icon-check"></span>В наличии
+				  				 </div>
+				  				 <span class="product-price">
+					   				<b>1 200</b>
+					   				<small>руб.</small>
+				   				</span>
+			   				</div>
+			   				<div class="product-buttons-wrap">
+				   				<div class="buttons">
+					   				<span class="button to-cart"  onclick="cart.addToCart(this, '035', priceList['035'])"><span class="icon icon-cart"></span>В корзину</span>
+				  				</div>
+			   				</div>
+		  			   </div>
+					</a>
+				</li>
+			</ul>
+	</figure>
+	<figure class="left">
+		<ul class="products clearfix">
+			<li class="product-wrapper">
+				<a href="" class="product">
+		  			<div class="product-main">
+			    		<div class="product-photo">
+					 		<img src="photo/palet.jpg" >
+			    		</div>
+			    		<div class="product-text">
+							<h2 class="produvt-name">Фиксатор межпальцевый двойной</h2>
+					    	<p>Фиксатор межпальцевый двойной Gess Gel Protect</p>
+				  		</div>
+		    		</div>
+		      		<div class="product-details-wrap">						
+						<div class="product-details">
+				   			<div class="product-availability">
+				   				<span class="icon icon-check"></span>В наличии
+				   			</div>
+				   			<span class="product-price">
+					   			<b>499</b>
+					   			<small>руб.</small>
+				   			</span>
+			   			</div>
+			   			<div class="product-buttons-wrap">
+				   			<div class="buttons">
+								<span class="button to-cart" onclick="cart.addToCart(this, '036', priceList['036'])"><span class="icon icon-cart"></span>В корзину</span>
+				   			</div>
+			   			</div>
+		   			</div>
+				</a>
+			</li>
+		</ul>
+	</figure>
+	</article>
+	<article>
+		<figure>
+	   		<ul class="products clearfix">
+				<li class="product-wrapper">
+		  			<a href="" class="product">
+		   				<div class="product-main">
+			    			<div class="product-photo">
+					 			<img src="photo/lekari.jpg" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Крем-мазь ЛЕКАРЬ , 50 мл</h2>
+					 			<p>Крем для ног, с мочевиной, размягчающий, при натоптышах </p>
+				  			</div>
+		      			</div>
+		      			<div class="product-details-wrap">						
+							<div class="product-details">
+				   			<div class="product-availability">
+				   				<span class="icon icon-check"></span>В наличии
+				   			</div>
+				   			<span class="product-price">
+					   			<b>218</b>
+					   			<small>руб.</small>
+				   			</span>
+			   	   			</div>
+			   	   		<div class="product-buttons-wrap">
+				   			<div class="buttons">
+					   			<span class="button to-cart" onclick="cart.addToCart(this, '037', priceList['037'])"><span class="icon icon-cart"></span>В корзину</span>
+				   			</div>
+			   			</div>
+		   			</div>
+				   </a>
+				</li>
+			</ul>
+		</figure>
+		<figure class="left">
+			<ul class="products clearfix">
+				<li class="product-wrapper">
+					<a href="" class="product">
+		   				<div class="product-main">
+			    			<div class="product-photo">
+					 			<img src="photo/greenglina.jpg" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Зелёная глина, кусковая</h2>
+					    		<p>Отличное средство для излечения болезней ЖКТ</p>
+				  			</div>
+		    			</div>
+		      				<div class="product-details-wrap">						
+								<div class="product-details">
+				   					<div class="product-availability">
+				  						 <span class="icon icon-check"></span>В наличии
+				   					</div>
+				   					<span class="product-price">
+					   					<b> 250</b>
+					   					<small>руб.</small>
+				   					</span>
+			     				</div>
+			     				<div class="product-buttons-wrap">
+				   					<div class="buttons">
+					   					<span class="button to-cart" onclick="cart.addToCart(this, '038', priceList['038'])"><span class="icon icon-cart"></span>В корзину</span>
+				  	   				</div>
+			   	 				</div>
+		   					</div>
+						</a>
+					</li>
+				</ul>
+		</figure>
+		<figure class="left">
+			<ul class="products clearfix">
+				<li class="product-wrapper">
+					<a href="" class="product">
+		   				<div class="product-main">
+			   				<div class="product-photo">
+					 			<img src="photo/protivit.png" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Голубая глина, кусковая</h2>
+
+					   			<p>Азовская натуральная глина. Источник кремния.</p>
+				  			</div>
+		    			</div>
+		      			<div class="product-details-wrap">						
+							<div class="product-details">
+				  				 <div class="product-availability">
+				  					 <span class="icon icon-check"></span>В наличии
+				  				 </div>
+				  				 <span class="product-price">
+					   				<b>250</b>
+					   				<small>руб.</small>
+				   				</span>
+			   				</div>
+			   				<div class="product-buttons-wrap">
+				   				<div class="buttons">
+					   				<span class="button to-cart" onclick="cart.addToCart(this, '039', priceList['039'])"><span class="icon icon-cart"></span>В корзину</span>
+				  				</div>
+			   				</div>
+		  			   </div>
+					</a>
+				</li>
+			</ul>
+	</figure>
+	<figure class="left">
+		<ul class="products clearfix">
+			<li class="product-wrapper">
+				<a href="" class="product">
+		  			<div class="product-main">
+			    		<div class="product-photo">
+					 		<img src="photo/pantovi.jpg">
+			    		</div>
+			    		<div class="product-text">
+							<h2 class="produvt-name">Пантовые ванны Пантоника,150мл.</h2>
+					    	<p>Улучшение женского метаболизма</p>
+				  		</div>
+		    		</div>
+		      		<div class="product-details-wrap">						
+						<div class="product-details">
+				   			<div class="product-availability">
+				   				<span class="icon icon-check"></span>В наличии
+				   			</div>
+				   			<span class="product-price">
+					   			<b>690</b>
+					   			<small>руб.</small>
+				   			</span>
+			   			</div>
+			   			<div class="product-buttons-wrap">
+				   			<div class="buttons">
+					   			<span class="button to-cart" onclick="cart.addToCart(this, '040', priceList['040'])"><span class="icon icon-cart"></span>В корзину</span>
+				   			</div>
+			   			</div>
+		   			</div>
+				</a>
+			</li>
+		</ul>
+	</figure>
+	</article>
+	<article>
+		<figure>
+	   		<ul class="products clearfix">
+				<li class="product-wrapper">
+		  			<a href="" class="product">
+		   				<div class="product-main">
+			    			<div class="product-photo">
+					 			<img src="photo/magni.png" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Магний, 802 мг.*90 капс</h2>
+					 			<p>Повысить устойчивость к умственным и эмоциональным нагрузкам</p>
+				  			</div>
+		      			</div>
+		      			<div class="product-details-wrap">						
+							<div class="product-details">
+				   			<div class="product-availability">
+				   				<span class="icon icon-check"></span>В наличии
+				   			</div>
+				   			<span class="product-price">
+					   			<b>1 102</b>
+					   			<small>руб.</small>
+				   			</span>
+			   	   			</div>
+			   	   		<div class="product-buttons-wrap">
+				   			<div class="buttons">
+					   			<span class="button to-cart" onclick="cart.addToCart(this, '041', priceList['041'])"><span class="icon icon-cart"></span>В корзину</span>
+				   			</div>
+			   			</div>
+		   			</div>
+				   </a>
+				</li>
+			</ul>
+		</figure>
+		<figure class="left">
+			<ul class="products clearfix">
+				<li class="product-wrapper">
+					<a href="" class="product">
+		   				<div class="product-main">
+			    			<div class="product-photo">
+					 			<img src="photo/kalci.png" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Кальций меджик,120шт.</h2>
+					    		<p>Коралловый кальций. Для приёма внутрь.</p>
+				  			</div>
+		    			</div>
+		      				<div class="product-details-wrap">						
+								<div class="product-details">
+				   					<div class="product-availability">
+				  						 <span class="icon icon-check"></span>В наличии
+				   					</div>
+				   					<span class="product-price">
+					   					<b>1 225 </b>
+					   					<small>руб.</small>
+				   					</span>
+			     				</div>
+			     				<div class="product-buttons-wrap">
+				   					<div class="buttons">
+					   					<span class="button to-cart" onclick="cart.addToCart(this, '042', priceList['042'])"><span class="icon icon-cart"></span>В корзину</span>
+
+				  	   				</div>
+			   	 				</div>
+		   					</div>
+						</a>
+					</li>
+				</ul>
+		</figure>
+		<figure class="left">
+			<ul class="products clearfix">
+				<li class="product-wrapper">
+					<a href="" class="product">
+		   				<div class="product-main">
+			   				<div class="product-photo">
+					 			<img src="photo/lecitin.png">
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Лецитин, 120капс</h2>
+					   			<p>При повышенной нервозности, утомляемости, снижении памяти</p>
+				  			</div>
+		    			</div>
+		      			<div class="product-details-wrap">						
+							<div class="product-details">
+				  				 <div class="product-availability">
+				  					 <span class="icon icon-check"></span>В наличии
+				  				 </div>
+				  				 <span class="product-price">
+					   				<b>1 102 руб.</b>
+					   				<small>руб.</small>
+				   				</span>
+			   				</div>
+			   				<div class="product-buttons-wrap">
+				   				<div class="buttons">
+					   				<span class="button to-cart" onclick="cart.addToCart(this, '043', priceList['043'])"><span class="icon icon-cart"></span>В корзину</span>
+				  				</div>
+			   				</div>
+		  			   </div>
+					</a>
+				</li>
+			</ul>
+	</figure>
+	<figure class="left">
+		<ul class="products clearfix">
+			<li class="product-wrapper">
+				<a href="" class="product">
+		  			<div class="product-main">
+			    		<div class="product-photo">
+					 		<img src="photo/omego.png" >
+			    		</div>
+			    		<div class="product-text">
+							<h2 class="produvt-name">Омега 3-6-9, 60капс</h2>
+					    	<p>Защищает сосуды и сердце, оптимизирует работу нервной системы</p>
+				  		</div>
+		    		</div>
+		      		<div class="product-details-wrap">						
+						<div class="product-details">
+				   			<div class="product-availability">
+				   				<span class="icon icon-check"></span>В наличии
+				   			</div>
+				   			<span class="product-price">
+					   			<b>1 058</b>
+					   			<small>руб.</small>
+				   			</span>
+			   			</div>
+			   			<div class="product-buttons-wrap">
+				   			<div class="buttons">
+					   			<span class="button to-cart" onclick="cart.addToCart(this, '044', priceList['044'])"><span class="icon icon-cart"></span>В корзину</span>
+				   			</div>
+			   			</div>
+		   			</div>
+				</a>
+			</li>
+		</ul>
+	</figure>
+	</article>
+	<article>
+		<figure>
+	   		<ul class="products clearfix">
+				<li class="product-wrapper">
+		  			<a href="" class="product">
+		   				<div class="product-main">
+			    			<div class="product-photo">
+					 			<img src="photo/Akula.png" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Жир печени акулы, 60 капс.*570 мг</h2>
+					 			<p>Антиоксидант. Улучшает функции иммунной системы</p>
+				  			</div>
+		      			</div>
+		      			<div class="product-details-wrap">						
+							<div class="product-details">
+				   			<div class="product-availability">
+				   				<span class="icon icon-check"></span>В наличии
+				   			</div>
+				   			<span class="product-price">
+					   			<b>1 176</b>
+					   			<small>руб.</small>
+				   			</span>
+			   	   			</div>
+			   	   		<div class="product-buttons-wrap">
+				   			<div class="buttons">
+					   			<span class="button to-cart" onclick="cart.addToCart(this, '045', priceList['045'])"><span class="icon icon-cart"></span>В корзину</span>
+				   			</div>
+			   			</div>
+		   			</div>
+				   </a>
+				</li>
+			</ul>
+		</figure>
+		<figure class="left">
+			<ul class="products clearfix">
+				<li class="product-wrapper">
+					<a href="" class="product">
+		   				<div class="product-main">
+			    			<div class="product-photo">
+					 			<img src="photo/botonchik.jpg" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Батончик Лёгкий перекус, 45г</h2>
+					    		<p>92 р./шт. Финиковый питательный батончик без сахара для веганов</p>
+				  			</div>
+		    			</div>
+		      				<div class="product-details-wrap">						
+								<div class="product-details">
+				   					<div class="product-availability">
+				  						 <span class="icon icon-check"></span>В наличии
+				   					</div>
+				   					<span class="product-price">
+					   					<b>720 руб.</b>
+					   					<small>руб.</small>
+				   					</span>
+			     				</div>
+			     				<div class="product-buttons-wrap">
+				   					<div class="buttons">
+					   					<span class="button to-cart" onclick="cart.addToCart(this, '046', priceList['046'])"><span class="icon icon-cart"></span>В корзину</span>
+				  	   				</div>
+			   	 				</div>
+		   					</div>
+						</a>
+					</li>
+				</ul>
+		</figure>
+		<figure class="left">
+			<ul class="products clearfix">
+				<li class="product-wrapper">
+					<a href="" class="product">
+		   				<div class="product-main">
+			   				<div class="product-photo">
+					 			<img src="photo/mod.jpg" >
+			    			</div>
+			    			<div class="product-text">
+								<h2 class="produvt-name">Мед АКАЦИИ, алтайский, 500г</h2>
+					   			<p>Гипоаллергенный. Рекомендуется женщинам и детям, при сахарном диабете.</p>
+				  			</div>
+		    			</div>
+		      			<div class="product-details-wrap">						
+							<div class="product-details">
+				  				 <div class="product-availability">
+				  					 <span class="icon icon-check"></span>В наличии
+				  				 </div>
+				  				 <span class="product-price">
+					   				<b>1 580</b>
+					   				<small>руб.</small>
+				   				</span>
+			   				</div>
+			   				<div class="product-buttons-wrap">
+				   				<div class="buttons">
+					   				<span class="button to-cart" onclick="cart.addToCart(this, '047', priceList['047'])"><span class="icon icon-cart"></span>В корзину</span>
+				  				</div>
+			   				</div>
+		  			   </div>
+					</a>
+				</li>
+			</ul>
+	</figure>
+	<figure class="left">
+		<ul class="products clearfix">
+			<li class="product-wrapper">
+				<a href="" class="product">
+		  			<div class="product-main">
+			    		<div class="product-photo">
+					 		<img src="photo/prepravi.png" >
+			    		</div>
+			    		<div class="product-text">
+							<h2 class="produvt-name">Травы с морской солью, 400 г</h2>
+					    	<p>Нормализация пищеварения со вкусом Средиземноморья</p>
+				  		</div>
+		    		</div>
+		      		<div class="product-details-wrap">						
+						<div class="product-details">
+				   			<div class="product-availability">
+				   				<span class="icon icon-check"></span>В наличии
+				   			</div>
+				   			<span class="product-price">
+					   			<b>1 363</b>
+					   			<small>руб.</small>
+				   			</span>
+			   			</div>
+			   			<div class="product-buttons-wrap">
+				   			<div class="buttons">
+					   			<span class="button to-cart" onclick="cart.addToCart(this, '048', priceList['048'])"><span class="icon icon-cart"></span>В корзину</span>
+				   			</div>
+			   			</div>
+		   			</div>
+				</a>
+			</li>
+		</ul>
+	</figure>
+	</article>
+</section>
+</div>
+ <footer>
+          <div class="footer_content">
+            <div class="footer_box"> 
+                <h2 class="span">Сайт для здоровья</h2>
+                <p>Хотите получать качественные, новые товары, по низкой цене, тогда заходите на наш сайт </p>
+            </div>
+          </div>
+       </footer>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" ></script>
+	<script src="js/wicart.js"  type="text/javascript" ></script>
+</body>
+</html>
